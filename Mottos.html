@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+
+    var houses = [
+        {name: "Targaryen", motto: "Fire and Blood"},
+        {name: "Stark",     motto: "Winter is Coming"},
+        {name: "Bolton",    motto: "Our Blades Are Sharp"},
+        {name: "Greyjoy",   motto: "We Do Not Sow"},
+        {name: "Tully",     motto: "Family, Duty, Honor"},
+        {name: "Arryn",     motto: "As High as Honor"},
+        {name: "Lannister", motto: "Hear Me Roar!"},
+        {name: "Tyrell",    motto: "Growing Strong"},
+        {name: "Baratheon", motto: "Ours is the Fury"},
+        {name: "Martell",   motto: "Unbowed, Unbent, Unbroken"}
+        ];
+
+    let enterChoice = 'Arryn';    
+    function choiceHouse (param) {
+        let result = houses.find(el => el.name === enterChoice);
+        return console.log(result.motto);     
+    } 
+
+    choiceHouse(enterChoice);
+
+    </script>
+</body>
+</html>
