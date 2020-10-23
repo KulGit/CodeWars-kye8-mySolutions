@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+
+    function codingCamp(fees,savings,months,montlyInterest) {
+    if (fees<savings) return console.log(fees) 
+    else {
+        let needSum = fees-savings;
+        let sum = (montlyInterest/12/100*needSum*months);
+        return console.log(sum);
+    }
+    };
+    let fees1 = 500,
+        savings1 = 300,
+        months1 = 3,
+        montlyInterest1 = 35;
+
+    codingCamp(fees1,savings1,months1,montlyInterest1);
+
+    </script>
+</body>
+</html>
