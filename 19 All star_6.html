@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+
+    var curry = {fname: "Steph", lname:"Curry", number:30, team:"Warriors", college:"Davidson"}
+
+    function getCollege(mas) {
+        if ('team' in mas) {
+                console.log(mas.team);
+                return mas.team;
+        }
+    };
+
+    getCollege(curry);
+
+    // function getCollege(player){
+    // return player.college
+    // }
+
+    </script>
+</body>
+</html>

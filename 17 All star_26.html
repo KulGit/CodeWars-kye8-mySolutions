@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+
+    let wholeGroup = { 
+    Leonard: 'Married',
+    Penny: 'Married',
+    Howard: 'Married',
+    Bernadette: 'Married',
+    Sheldon: 'In a relationship',
+    Amy: 'In a relationship',
+    Raj: 'Single' 
+    }
+
+// =>
+// { Leonard: 'Married',
+//  Penny: 'Married',
+//  Howard: 'Married',
+//  Bernadette: 'Married',
+//  Sheldon: 'In a relationship',
+//  Amy: 'In a relationship',
+//  Raj: 'In a relationship' }
+
+    function missionImpossible(group) {
+        if ('Raj' in group) {
+            group.Raj = 'In a relation';
+        }
+        console.log(wholeGroup);
+        return(wholeGroup);
+    };
+
+    missionImpossible(wholeGroup);
+    
+    // function missionImpossible(obj){
+    // if (obj.hasOwnProperty('Raj')){
+    // return Object.assign(obj,{Raj:'In a relationship'})}
+    // return obj
+    // }
+
+    </script>
+</body>
+</html>

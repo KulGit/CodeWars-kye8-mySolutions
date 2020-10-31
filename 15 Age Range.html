@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+
+    function ageRange(s) {
+
+        if (s=>14) {
+           getAge = `${Math.floor(s/2+7)} - ${Math.floor((s-7)*2)}`
+        } else {
+            getAge = `${Math.floor(s-0.1*s)} - ${Math.floor(s+0.1*s)}`
+        }
+
+        return getAge;
+    };
+
+    let getAge;
+    let rangeMy = 40;
+
+    ageRange(rangeMy);
+
+    console.log(getAge);
+
+    
+
+
+    </script>
+</body>
+</html>
