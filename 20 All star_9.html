@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+    // This Kata is intended as a small challenge for my students
+    // Create a function named bite(), that takes a LivingThing object as input. If the 'race' key of the object is 'human', the function should convert its 'race' to a 'zombie' and returning the, now modified, object.
+    // Note: If the object does NOT have a 'race' of 'human', the return object should NOT be changed in any way.
+
+    function LivingThing(name,race){
+    this.name=name;
+    this.race = race;
+    }
+
+    function bite (obj) {
+        if (obj.race === 'human') obj.race = 'zombie';
+        return obj
+    }
+
+    var player = new LivingThing("Gary", "human");
+    bite(player) // => {name: "Gary", race: "zombie"};
+    console.log(player);
+
+    var plant = new LivingThing("Carrot", "plant");
+    bite(plant) // => {name: "Carrot", race: "plant"};
+    console.log(plant);
+
+
+
+    </script>
+</body>
+</html>

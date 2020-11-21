@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict'
+    /*
+    Description:
+    Time to test your basic knowledge in functions! Return the odds from a list:
+    odds([1,2,3,4,5]) #=> [1,3,5]
+    */
+
+    function goOdds (j) {
+
+        let newArray = [];
+        j.forEach(el => {
+            if (el%2!=0) {
+                newArray.push(el);
+            }
+        });
+        return newArray
+    }
+
+    let str = [1,2,3,4,5,6,7] ;
+
+    goOdds(str);
+    console.log(str);
+
+    // function odds(values){
+    // return values.filter(x =>x%2!=0 );
+    // }
+
+    </script>
+</body>
+</html>
