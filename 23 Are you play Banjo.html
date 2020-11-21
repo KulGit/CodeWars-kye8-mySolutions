@@ -18,23 +18,18 @@
     Names given are always valid strings.
     */
     function Banjo(str) {
-        let j = str.split();
-        console.log(j);
-        if (j[0] === 'r' | 'R') {
-            str.join;
-            return console.log(str + " plays banjo")
-        } else {
-            str.join;
-            return console.log(str + " does not play banjo")
-        }
+        answer = str.charAt(0).toLowerCase();
+        return answer == 'r' ? `${str} yes play` : `${str} no no play` 
     };
+
+    let answer;
 
     let rebeca = 'Rebeca';
     let rob = 'rob';
     let nick = 'nick';
-    Banjo(rebeca);
-    Banjo(rob);
-    Banjo(nick);
+    console.log(Banjo(rebeca));
+    console.log(Banjo(rob));
+    console.log(Banjo(nick));
 
 //     function areYouPlayingBanjo(name) {
 //     if (/^[rR]/.test(name))return `${name} plays banjo`;

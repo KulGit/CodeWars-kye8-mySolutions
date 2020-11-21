@@ -10,15 +10,16 @@
     'use strict'
     // Description:
     // You will be given a string of letters. The string must be returned in alphabetical order.
-    let string = 'askmepo';
+    let str = 'askmepo';
+    let inOrder ='';
    
     function alphabet (j) {
-        // j.split(' ').sort;
-        return j.split.sort((a,b)=>a.toLowerCase()>b.toLowerCase()).join;
+         inOrder = j.split('').sort().join('');
+         return inOrder
     }
 
-    alphabet(string);
-    console.log(string);
+    alphabet(str);
+    console.log(alphabet(str));
     
 
    
